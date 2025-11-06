@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import icon1 from "../assets/facebook (1).png";
-import icon2 from "../assets/instagram.png";
-import icon3 from "../assets/telegram.png";
-import icon4 from "../assets/gps.png";
-import icon5 from "../assets/email.png";
-import icon6 from "../assets/phone-call.png";
-import icon7 from "../assets/7693325_tiktok_social media_logo_apps_icon.png"
+const icon1 ="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761460631/facebook_1_iniwpn.png";
+const icon2 ="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761460680/instagram_nnvw28.png";
+const icon3 ="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761460721/telegram_nbovto.png";
+const icon4 ="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761460644/gps_obj9z6.png";
+const icon5 ="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761460624/email_gjpwbj.png";
+const icon6 ="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761460710/phone-call_guxvrs.png";
+const icon7 ="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761460600/7693325_tiktok_social_media_logo_apps_icon_e0c9xw.png"
 // import { useState } from "react";
 
 export default function Footer() {
@@ -26,7 +26,7 @@ export default function Footer() {
       
       {/* Address */}
       <div className="flex flex-col gap-3">
-        <h1 className="font-bold text-2xl">Address</h1>
+        <h3 className="font-bold text-2xl">Address</h3>
         <div className="flex flex-col gap-3 text-sm">
           <div className="flex items-center gap-2">
             <div className={circleStyle}>
@@ -54,7 +54,7 @@ export default function Footer() {
 
       {/* Pages */}
       <div className="flex flex-col gap-3">
-        <h1 className="font-bold text-2xl">Pages</h1>
+        <h3 className="font-bold text-2xl">Pages</h3>
         <div className="flex flex-col gap-1 text-lg">
           {isLandingPage ? (
             <>
@@ -73,7 +73,7 @@ export default function Footer() {
       {/* About Us + Socials */}
       <div className="flex flex-col gap-3 w-full max-w-md px-8 md:px-0">
         <div className="flex flex-col gap-2 mb-5">
-          <h1 className="font-bold text-2xl">About Us</h1>
+          <h3 className="font-bold text-2xl">About Us</h3>
           <p className="text-justify text-lg text-gray-300 leading-relaxed">
             At Bashaashaa, we deliver professional videography and photography, 
             capturing every moment and story with creativity and care, based in Jimma, 

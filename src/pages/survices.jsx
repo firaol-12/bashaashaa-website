@@ -4,16 +4,16 @@ import "./survices.css";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 
-import widding from "../assets/wedding/cover.jpg";
-import graduation from "../assets/graduation/photo_2025-09-05_01-43-50.jpg";
-import kids from "../assets/kids/photo_2025-08-31_22-27-36.jpg";
-import family from "../assets/kids/photo_2025-08-31_22-28-21.jpg";
-import events from "../assets/events/cover.jpg";
-import models from "../assets/model/cover.JPG"
-import birthday from "../assets/birthday/photo_2025-09-04_23-06-10.jpg"
-import travel from "../assets/travel/cover.jpg"
-import landscape from "../assets/landscape/cover.JPG"
-import videography from "../assets/v cover.JPG"
+const widding= "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761453545/w8_dglet0.jpg";
+const graduation= "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761460074/g6_nsxx0s.jpg";
+const kids= "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761456587/photo_2025-08-31_22-27-36_hnent9.jpg";
+const family= "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761456614/photo_2025-08-31_22-28-21_twd2dy.jpg";
+const events= "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761459783/e2-min_hkaqba.jpg";
+const models= "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761454149/cover_jhki0l.jpg"
+const birthday= "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761457314/photo_2025-09-04_23-06-10_bjt04e.jpg"
+const travel= "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761455341/cover-min_yyu8xc.jpg"
+const landscape= "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761457690/cover_myk3bv.jpg"
+const videography= "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761460495/v_cover_o0ennc.jpg"
 
 export default function Survices() {
   const [activeCard, setActiveCard] = useState(null);
@@ -25,22 +25,22 @@ export default function Survices() {
   };
 
   return (
-    <section id="services" className="flex flex-col my-5 justify-center items-center">
-      <h1
-        className="text-3xl my-2 text-[rgb(11,59,91)] text-center h1 border-3 border-[rgb(11,59,91)] px-4 "
+    <section id="services" className="flex flex-col my-5 justify-center items-center mb-10">
+      <h2
+        className="text-3xl my-2 text-[rgb(11,59,91)] text-center h1 border-3 border-[rgb(11,59,91)] px-4 2xl:text-5xl"
         data-aos="fade-down"
         data-aos-once="true"
       >
         Services
-      </h1>
-      <div className="px-6 md:px-20 lg:px-100  flex justify-center items-center mb-3 mt-3">
-        <p className="text-xl text-[rgb(255,255,255)] text-center text-bold" data-aos="zoom-in" data-aos-once="true">
+      </h2>
+      <div className="px-6 md:px-20 lg:px-100  flex justify-center items-center my-3">
+        <p className="text-xl text-[rgb(255,255,255)] text-center text-bold 2xl:text-2xl  2xl:py-5" data-aos="zoom-in" data-aos-once="true">
           We provide professional videography and photography 
           services to capture your moments with clarity, creativity, and style.
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-10 p-6 md:px-15">
+      <div className="flex flex-wrap justify-center gap-10 p-6 md:px-10 lg:px-30">
         <div data-aos="zoom-in" data-aos-once="true">
           <div
             onClick={() => handleCardClick(10)}
@@ -54,7 +54,7 @@ export default function Survices() {
             <div className="relative ml-5">
               <div className="absolute -top-12 -right-7 w-38 h-18 bg-white shadow-[0_15px_30px_rgba(0,0,0,0.7)] flex flex-col justify-center items-center transition-all duration-300">
                 <div className="flex flex-col items-center">
-                  <h2 className="lar text-xl">Videography</h2>
+                  <h3 className="lar text-xl">Videography</h3>
                 </div>
                 
                  <a
@@ -89,7 +89,7 @@ export default function Survices() {
             <div className="relative ml-5">
               <div className="absolute -top-12 -right-7 w-38 h-18 bg-white shadow-[0_15px_30px_rgba(0,0,0,0.7)] flex flex-col justify-center items-center transition-all duration-300">
                 <div className="flex flex-col items-center">
-                  <h2 className="lar text-xl">Wedding</h2>
+                  <h3 className="lar text-xl">Wedding</h3>
                 </div>
                 
                 <Link to={"/wedding"}>
@@ -119,7 +119,7 @@ export default function Survices() {
             <div className="relative ml-5">
               <div className="absolute -top-12 -right-7 w-38 h-18 bg-white shadow-[0_15px_30px_rgba(0,0,0,0.7)] flex flex-col justify-center items-center transition-all duration-300">
                 <div className="flex flex-col items-center">
-                  <h2 className="lar text-xl">Graduation</h2>
+                  <h3 className="lar text-xl">Graduation</h3>
                 </div>
                 <Link to="/Graduation">
                   <button
@@ -149,7 +149,7 @@ export default function Survices() {
             <div className="relative ml-5">
               <div className="absolute -top-12 -right-7 w-38 h-18 bg-white shadow-[0_15px_30px_rgba(0,0,0,0.7)] flex flex-col justify-center items-center transition-all duration-300">
                 <div className="flex flex-col items-center">
-                  <h2 className="lar text-xl">Kids</h2>
+                  <h3 className="lar text-xl">Kids</h3>
                 </div>
                 <Link to="/Kids">
                   <button
@@ -180,7 +180,7 @@ export default function Survices() {
             <div className="relative ml-5">
               <div className="absolute -top-12 -right-7 w-38 h-18 bg-white shadow-[0_15px_30px_rgba(0,0,0,0.7)] flex flex-col justify-center items-center transition-all duration-300">
                 <div className="flex flex-col items-center">
-                  <h2  className="lar text-xl">Family</h2>
+                  <h3  className="lar text-xl">Family</h3>
                 </div>
                 <Link to="/Family">
                   <button
@@ -210,7 +210,7 @@ export default function Survices() {
             <div className="relative ml-5">
               <div className="absolute -top-12 -right-7 w-38 h-18 bg-white shadow-[0_15px_30px_rgba(0,0,0,0.7)] flex flex-col justify-center items-center transition-all duration-300">
                 <div className="flex flex-col items-center">
-                  <h2 className="lar text-xl">Events</h2>
+                  <h3 className="lar text-xl">Events</h3>
                 </div>
                 <Link to="/Events">
                   <button
@@ -240,7 +240,7 @@ export default function Survices() {
             <div className="relative ml-5">
               <div className="absolute -top-12 -right-7 w-38 h-18 bg-white shadow-[0_15px_30px_rgba(0,0,0,0.7)] flex flex-col justify-center items-center transition-all duration-300">
                 <div className="flex flex-col items-center">
-                  <h2  className="lar text-xl">Models</h2>
+                  <h3  className="lar text-xl">Models</h3>
                 </div>
                 <Link to="/Models">
                   <button
@@ -270,7 +270,7 @@ export default function Survices() {
             <div className="relative ml-5">
               <div className="absolute -top-12 -right-7 w-38 h-18 bg-white shadow-[0_15px_30px_rgba(0,0,0,0.7)] flex flex-col justify-center items-center transition-all duration-300">
                 <div className="flex flex-col items-center">
-                  <h2  className="lar text-xl">Birthday</h2>
+                  <h3 className="lar text-xl">Birthday</h3>
                 </div>
                 <Link to="/birthday">
                   <button
@@ -290,7 +290,7 @@ export default function Survices() {
           <div
             onClick={() => handleCardClick(7)}
             className={`w-45 h-65 border mb-5 transform transition-transform duration-300 group ${
-              activeCard === 6
+              activeCard === 7
                 ? "border-[rgb(11,59,91)] -translate-y-5 border-4"
                 : "hover:-translate-y-5 hover:border-4 hover:border-[rgb(11,59,91)]"
             }`}
@@ -299,7 +299,7 @@ export default function Survices() {
             <div className="relative ml-5">
               <div className="absolute -top-12 -right-7 w-38 h-18 bg-white shadow-[0_15px_30px_rgba(0,0,0,0.7)] flex flex-col justify-center items-center transition-all duration-300">
                 <div className="flex flex-col items-center">
-                  <h2 className="lar text-xl">Travel</h2>
+                  <h3 className="lar text-xl">Travel</h3>
                 </div>
                 <Link to="/travel">
                   <button
@@ -317,9 +317,9 @@ export default function Survices() {
 
         <div data-aos="zoom-in" data-aos-once="true">
           <div
-            onClick={() => handleCardClick(6)}
+            onClick={() => handleCardClick(8)}
             className={`w-45 h-65 border mb-5 transform transition-transform duration-300 group ${
-              activeCard === 6
+              activeCard === 8
                 ? "border-[rgb(11,59,91)] -translate-y-5 border-4"
                 : "hover:-translate-y-5 hover:border-4 hover:border-[rgb(11,59,91)]"
             }`}
@@ -328,12 +328,12 @@ export default function Survices() {
             <div className="relative ml-5">
               <div className="absolute -top-12 -right-7 w-38 h-18 bg-white shadow-[0_15px_30px_rgba(0,0,0,0.7)] flex flex-col justify-center items-center transition-all duration-300">
                 <div className="flex flex-col items-center">
-                  <h2  className="lar text-xl">Landscape</h2>
+                  <h3  className="lar text-xl">Landscape</h3>
                 </div>
                 <Link to="/landscape">
                   <button
                     className={`px-3 py-1 cursor-pointer border-[rgb(11,59,91)] border-2 text-[rgb(11,59,91)] text-sm transition-all duration-300 my-1
-                    ${activeCard === 6 ? "bg-[rgb(11,59,91)] text-white" : "group-hover:bg-[rgb(11,59,91)] group-hover:text-white"}`}
+                    ${activeCard === 8 ? "bg-[rgb(11,59,91)] text-white" : "group-hover:bg-[rgb(11,59,91)] group-hover:text-white"}`}
                   >
                     View More
                   </button>

@@ -9,8 +9,8 @@ export default function Contact() {
   e.preventDefault();
 
   emailjs
-    .sendForm('service_2vuubt8', 'template_egu178q', form.current, {
-      publicKey: 'wCxUf7jmPEXl2zQxw',
+    .sendForm('service_wiir9cm', 'template_5ix098p', form.current, {
+      publicKey: 'ZduBJ0QQC4BugLy81',
     })
     .then(
       () => {
@@ -78,7 +78,7 @@ export default function Contact() {
             <input
               data-aos="fade-down"
               type="text"
-              name="user_name"
+              name="name"
               placeholder="Your Name"
               className="border px-4 py-2 rounded-2xl border-white"
               required
@@ -87,7 +87,7 @@ export default function Contact() {
             <input
               data-aos="fade-down"
               type="email"
-              name="user_email"
+              name="email"
               placeholder="Your Email"
               className="border px-4 py-2 rounded-2xl border-white"
               required

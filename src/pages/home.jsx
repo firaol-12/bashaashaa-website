@@ -1,10 +1,10 @@
 import React from "react";
 import CountUp from "react-countup";   // import countup
-import img from "../assets/Canon eos 70d.jpeg";
-import icon1 from "../assets/facebook (1).png";
-import icon2 from "../assets/instagram.png";
-import icon3 from "../assets/telegram.png";
-import icon4 from "../assets/7693325_tiktok_social media_logo_apps_icon.png";
+const img= "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761460563/Canon_eos_70d_xzaj18.jpg";
+const icon1 = "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761460631/facebook_1_iniwpn.png";
+const icon2 = "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761460680/instagram_nnvw28.png";
+const icon3 = "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761460721/telegram_nbovto.png";
+const icon4 = "https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761460600/7693325_tiktok_social_media_logo_apps_icon_e0c9xw.png";
 import "./home.css";
 
 export default function Home() {
@@ -28,25 +28,25 @@ export default function Home() {
             <p className="text-5xl md:text-6xl text-white h1 text-center">
               <CountUp end={100} duration={3} separator="" />k+
             </p>
-            <h1 className="text-xl md:text-2xl text-[rgb(11,59,91)] mb-2 text-center font-bold 2xl:text-3xl">
+            <h3 className="text-xl md:text-2xl text-[rgb(11,59,91)] mb-2 text-center font-bold 2xl:text-3xl">
               Photography
-            </h1>
+            </h3>
           </div>
           <div>
             <p className="text-5xl md:text-6xl  text-white h1 text-center">
               <CountUp end={50} duration={3} />+
             </p>
-            <h1 className="text-xl md:text-2xl text-[rgb(11,59,91)] mb-2 text-center font-bold 2xl:text-3xl">
+            <h3 className="text-xl md:text-2xl text-[rgb(11,59,91)] mb-2 text-center font-bold 2xl:text-3xl">
               Videography
-            </h1>
+            </h3>
           </div>
           <div>
             <p className="text-5xl md:text-6xl  text-white h1 text-center">
               <CountUp end={5} duration={3} />+
             </p>
-            <h1 className="text-xl md:text-2xl text-[rgb(11,59,91)] mb-2 text-bold text-center font-bold 2xl:text-3xl">
+            <h3 className="text-xl md:text-2xl text-[rgb(11,59,91)] mb-2 text-bold text-center font-bold 2xl:text-3xl">
               Experience
-            </h1>
+            </h3>
           </div>
         </div>
 

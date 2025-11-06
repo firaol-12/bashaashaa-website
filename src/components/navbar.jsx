@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logoImg from "../assets/logo/Bashaashaa Logo colored-01.png"
+const logoImg="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761460396/Bashaashaa_Logo_colored-01_j11mxx.png"
 
 export default function Navbar() {
   const location = useLocation();
@@ -40,7 +40,7 @@ export default function Navbar() {
         <div className="md:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)} className="focus:outline-none">
             {/* Hamburger Icon */}
-            <div className="space-y-1">
+            <div className="space-y-1 cursor-pointer">
               <span className="block w-6 h-0.5 bg-white"></span>
               <span className="block w-6 h-0.5 bg-white"></span>
               <span className="block w-6 h-0.5 bg-white"></span>

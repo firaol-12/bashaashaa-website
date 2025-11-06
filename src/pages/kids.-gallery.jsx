@@ -1,20 +1,8 @@
 import React, { useState ,useEffect} from "react";
 import AOS from "aos";
+import { images } from "./images.jsx";
 
-import img1 from "../assets/kids/photo_2025-08-31_22-27-36.jpg"
-import img2 from "../assets/kids/photo_2025-08-31_22-27-54.jpg"
-import img3 from "../assets/kids/photo_2025-08-31_22-27-59.jpg"
-import img4 from "../assets/kids/photo_2025-08-31_22-28-04.jpg"
-import img5 from "../assets/kids/photo_2025-08-31_22-28-17.jpg"
-import img6 from "../assets/kids/photo_2025-08-31_22-28-21.jpg"
-import img7 from "../assets/kids/photo_2025-08-31_22-28-27.jpg"
-import img8 from "../assets/kids/photo_2025-08-31_22-28-33.jpg"
-import img9 from "../assets/kids/photo_2025-08-31_22-28-38.jpg"
-import img10 from "../assets/kids/photo_2025-08-31_22-28-48.jpg"
-import img11 from "../assets/kids/photo_2025-09-05_11-10-47.jpg"
-import img12 from "../assets/kids/photo_2025-09-05_11-10-59.jpg"
-import img13 from "../assets/kids/photo_2025-09-05_11-11-27.jpg"
-
+const KidsImage= images.kid;
 
 export default function WeddingImage(){
     useEffect(() => {
@@ -25,13 +13,6 @@ export default function WeddingImage(){
       mirror: true,
     });
     }, []);
-    const images = [
-        img13, img3, img6,img11,
-        img7, img5, img10,img8,
-        img12,img4,img2,img1,
-        img9, img3
-      ];
-    
       // Track tapped image on mobile
         const [activeIndex, setActiveIndex] = useState(null);
       
@@ -41,25 +22,25 @@ export default function WeddingImage(){
       
         return (
           <div className="flex flex-col justify-center items-center gap-6 py-20">
-            <h1 className="text-3xl text-[rgb(11,59,91)] text-center h1 border-3 border-[rgb(11,59,91)] px-4 "
+            <h2 className="text-3xl text-[rgb(11,59,91)] text-center h1 border-3 border-[rgb(11,59,91)] px-4 2xl:text-5xl"
               data-aos="fade-down" 
               data-aos-once="true"
             >
               Kids
-            </h1>
+            </h2>
             <div className="px-6 md:px-20 lg:px-100 flex justify-center items-center">
-              <p className="text-xl text-white text-center " data-aos="zoom-in" data-aos-once="true">
+              <p className="text-xl text-white text-center  2xl:text-2xl  2xl:py-5" data-aos="zoom-in" data-aos-once="true">
                   Keeping the pure smiles and sweet moments of childhood forever alive.
               </p>
             </div>
       
             {/* Masonry Layout */}
             <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 px-15 gap-5 py-8 md:px-10 lg:px-38 ">
-              {images.map((src, index) => (
+              {KidsImage.map((src, index) => (
                 <div
                   key={index}
                   data-aos="fade-up"
-                  className="relative overflow-hidden rounded-xl shadow-lg mb-6 break-inside-avoid group"
+                  className="relative overflow-hidden shadow-lg mb-6 break-inside-avoid group"
                   onTouchStart={() => handleTouch(index)}
                 >
                   {/* Image */}

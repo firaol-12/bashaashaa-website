@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import img1 from "../assets/IMG_2864.JPG";
+const img1 ="https://res.cloudinary.com/djw0srhou/image/upload/f_auto,q_auto,w_1000/v1761460932/IMG_2864_ggvl5q.jpg";
 
 export default function Team() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -17,7 +17,7 @@ export default function Team() {
   return (
     <div className="flex flex-col items-center gap-6 pb-10 mt-20">
       <h1
-        className="text-[rgb(11,59,91)] text-3xl text-center h1 border-3 border-[rgb(11,59,91)] px-4 "
+        className="text-[rgb(11,59,91)] text-3xl text-center h1 border-3 border-[rgb(11,59,91)] px-4  2xl:text-5xl"
         data-aos="fade-down"
       >
         About Us
@@ -57,7 +57,7 @@ export default function Team() {
 
         <div className="flex gap-6 flex-col md:w-200">
         
-          <p className="text-justify text-xl text-white" data-aos="zoom-in">
+          <p className="text-justify text-xl text-white  2xl:text-2xl" data-aos="zoom-in">
             At Bashaashaa, we are passionate about capturing life's 
             precious moments and transforming them into timeless 
             masterpieces with creative photography and professional 
